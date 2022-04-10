@@ -8,6 +8,22 @@
 </head>
 <body>
     <script>
+        const cylinder = {
+            radius: 5,
+            height: 8,
+            area() {
+                return 'area: ' + (Math.PI * this.radius ** 2 * this.height).toFixed(2); 
+            },
+            volume() {
+                return 'volume: ' + ((2 * Math.PI * this.radius ** 2) + (2 * Math.PI * this.radius * this.height)).toFixed(2);
+            }
+        };
+        const areaResult = cylinder.area();
+        const volumeResult = cylinder.volume();
+        console.log(areaResult);
+        console.log(volumeResult);
+
+
         function getResult(number1, number2, mathSymbol) {
             switch (mathSymbol) {
                 case '+':
