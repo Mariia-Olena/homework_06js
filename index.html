@@ -50,6 +50,23 @@
         }
         const isCharPresentResult = isCharPresent('weather', 't');
         console.log(isCharPresentResult);
+
+
+        function charIndexOf(string, symbol) {
+            isPresent = -1;
+            for (i = 0; i < string.length; i++) {
+                let letter = string[i];
+                if (letter === symbol) {
+                   isPresent = i;
+                   break;
+                } else {
+                    continue;
+                }
+            }
+            return isPresent;
+        }
+        const charIndexOfResult = charIndexOf('weather', 'a');
+        console.log(charIndexOfResult);
     </script>
 </body>
 </html>
