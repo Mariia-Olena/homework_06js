@@ -31,10 +31,25 @@
             }
             return result;
         }
-        const functionResult = getResult(4, 4, '*');
+        const functionResult = getResult(4, 5, '*');
         console.log(functionResult);
 
 
+        function isCharPresent(string, symbol) {
+            isPresent = false;
+            for (i = 0; i < string.length; i++) {
+                let letter = string[i];
+                if (letter === symbol) {
+                   isPresent = true;
+                   break;
+                } else {
+                    continue;
+                }
+            }
+            return isPresent;  
+        }
+        const isCharPresentResult = isCharPresent('weather', 't');
+        console.log(isCharPresentResult);
     </script>
 </body>
 </html>
